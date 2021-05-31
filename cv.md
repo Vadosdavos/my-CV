@@ -1,16 +1,16 @@
-#Vadim Bezymyannyi
-####[GitHub](https://github.com/Vadosdavos), [Telegramm](https://t.me/inemidavos), [E-mail](bezbvap@gmail.com)
+# Vadim Bezymyannyi
+#### [GitHub](https://github.com/Vadosdavos), [Telegramm](https://t.me/inemidavos), [E-mail](bezbvap@gmail.com)
 ---
 I'am 27 years old. I have C&I Engineer degree, but I want to change my speciality. So I started to learn web-technologies, in particular HTML, CSS and JavaScript. Studying is easy for me, I like to solve problems and get results. I appreciate honesty and kindness in people. I want to work remotely and travel.
 
-####My technology stack: 
+##### My technology stack: 
 * HTML5
 * CSS3
 * JavaScript
 * Bootstrap 
 * Git/GitHub
 
-#####My works: 
+###### My works: 
 
 1. Header for online-zoo:
 ```
@@ -121,12 +121,12 @@ buttonsContainer.addEventListener('click', function (evt) {
 });
 ```
 
-####Education: 
+##### Education: 
 
 * Kaliningrad State Technical University 2010-2015. Master degree of Automation of technological processes and production
 * [CS50](https://cs50.harvard.edu/) online-course (https://github.com/Vadosdavos/cs50)
 * html training at [HTML Academy](https://htmlacademy.ru/)
 
-####Language skills:
+##### Language skills:
 Russian - Native
 English - Pre-Intermediate
