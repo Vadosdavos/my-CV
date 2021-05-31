@@ -128,5 +128,5 @@ buttonsContainer.addEventListener('click', function (evt) {
 * html training at [HTML Academy](https://htmlacademy.ru/)
 
 ##### Language skills:
-Russian - Native
-English - Pre-Intermediate
+* Russian: Native
+* English: Pre-Intermediate
