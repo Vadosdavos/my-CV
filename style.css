@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -41,11 +44,43 @@ main {
   padding: 0;
   margin: 0;
   margin-right: 20px;
-  text-transform: uppercase;
+}
+.contacts-list-item:last-child {
+  margin-right: 0;
 }
 .page-header a {
   color: #4f4f4f;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .page-header a:hover {
   text-decoration: underline;
+}
+.grid-wrapper {
+  border-bottom: 1px solid #d3d1d1;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: 480px 480px;
+  grid-template-rows: 90px 160px;
+  grid-template-areas:
+    "title img"
+    "text img";
+}
+.main-title {
+  grid-area: title;
+  margin: 0;
+  padding: 0;
+  align-self: end;
+}
+.main-text {
+  grid-area: text;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+}
+.cv-avatar {
+  grid-area: img;
+  border-radius: 15%;
+  justify-self: end;
 }
