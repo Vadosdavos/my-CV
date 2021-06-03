@@ -109,7 +109,7 @@ main {
   grid-area: text;
   margin: 0;
 }
-.title:nth-child(1) {
+.title:nth-child(3) {
   grid-area: title2;
 }
 .skills-list:last-child {
