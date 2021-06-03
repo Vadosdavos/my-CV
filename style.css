@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -62,7 +62,9 @@ main {
   text-transform: uppercase;
 }
 .page-header a:hover,
-.education-item a:hover {
+.education-item a:hover,
+.work-item-title a:hover,
+.copyright-item a:hover {
   text-decoration: underline;
 }
 .grid-wrapper {
@@ -73,8 +75,8 @@ main {
   grid-template-columns: 50% 50%;
   grid-template-rows: 90px 160px;
   grid-template-areas:
-    "title img"
-    "text img";
+    'title img'
+    'text img';
 }
 .main-title {
   grid-area: title;
@@ -97,8 +99,8 @@ main {
   grid-template-columns: 54% 46%;
   grid-template-rows: 30px 120px;
   grid-template-areas:
-    "title title2"
-    "text text2";
+    'title title2'
+    'text text2';
 }
 .title {
   grid-area: title;
