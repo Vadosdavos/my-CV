@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+.visualy-hidden {
+  position: absolute;
+  visibility: hidden;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+main {
+  background-color: #4f4f4f;
+  padding-bottom: 25px;
+}
+.page-header,
+.page-footer {
+  padding: 20px 0;
+}
+.header-navigation,
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+.header-navigation-list,
+.contacts-list,
+.copyright {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header-navigation-item,
+.contacts-list-item,
+.copyright-item {
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+  color: #4f4f4f;
+}
+.contacts-list-item:last-child {
+  margin-right: 0;
+}
+.page-header a,
+.copyright-item a {
+  color: #4f4f4f;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.page-header a:hover,
+.education-item a:hover {
+  text-decoration: underline;
+}
+.grid-wrapper {
+  border-bottom: 1px solid #d3d1d1;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 90px 160px;
+  grid-template-areas:
+    "title img"
+    "text img";
+}
+.main-title {
+  grid-area: title;
+  margin: 0;
+  padding: 0;
+  align-self: end;
+}
+.main-text {
+  grid-area: text;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+}
+.cv-avatar {
+  grid-area: img;
+  border-radius: 15% 0;
+  justify-self: end;
+}
+.skills .grid-wrapper {
+  grid-template-columns: 54% 46%;
+  grid-template-rows: 30px 120px;
+  grid-template-areas:
+    "title title2"
+    "text text2";
+}
+.title {
+  grid-area: title;
+  margin: 0;
+  padding: 0;
+}
+.skills-list {
+  grid-area: text;
+  margin: 0;
+}
+.title:nth-child(1) {
+  grid-area: title2;
+}
+.skills-list:last-child {
+  grid-area: text2;
+}
+.education .container {
+  padding: 25px 0;
+  border-bottom: 1px solid #d3d1d1;
+}
+.works {
+  padding-top: 25px;
+}
+.works-list {
+  margin: 0;
+  padding-bottom: 0;
+}
+.skills-item,
+.education-item,
+.works-item {
+  margin-top: 12px;
+}
+.education-item a,
+.works-item a {
+  color: #a6b9eb;
+  text-decoration: none;
+}
+.work-item-title {
+  margin-bottom: 10px;
+}
+.figure-field {
+  margin: 0;
+  padding: 0;
+}
