@@ -7,7 +7,6 @@ I'am 27 years old. I have C&I Engineer degree, but I want to change my specialit
 * HTML5
 * CSS3
 * JavaScript
-* Bootstrap 
 * Git/GitHub
 
 ###### My works: 
@@ -130,4 +129,4 @@ buttonsContainer.addEventListener('click', function (evt) {
 
 ##### Language skills:
 * Russian: Native
-* English: Pre-Intermediate
+* English: Intermediate
