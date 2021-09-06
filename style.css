@@ -211,7 +211,7 @@ details {
 }
 @media (max-width: 640px) {
   .main-text {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 14px;
   }
   .grid-wrapper {
@@ -232,20 +232,28 @@ details {
 }
 
 @media (max-width: 320px) {
+  .title {
+    text-align: center;
+  }
   .main-text {
-    line-height: 12px;
+    line-height: 14px;
   }
   .return {
-    right: 30px;
+    right: 15px;
   }
   .works-list {
-    padding-left: 20px;
+    padding-left: 10px;
+    list-style: none;
+    text-align: center;
   }
   details {
     padding-left: 20px;
     padding-right: 0px;
   }
+  .codeTitle {
+    text-align: center;
+  }
   .js {
-    font-size: 6px;
+    font-size: 5px;
   }
 }
