@@ -179,6 +179,13 @@ details {
 .cv-video .title {
   margin-bottom: 25px;
 }
+.burger {
+  display: none;
+}
+input[type='checkbox'] {
+  position: absolute;
+  visibility: hidden;
+}
 @media (max-width: 960px) {
   section,
   .page-header,
@@ -189,6 +196,49 @@ details {
   .main-text {
     padding-top: 15px;
     font-size: 14px;
+  }
+  .burger {
+    display: block;
+    background: linear-gradient(0deg, #4f4f4f 20%, white 20% 40%, #4f4f4f 40% 60%, white 60% 80%, #4f4f4f 80% 100%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: 0.5s;
+  }
+  .header-navigation-list {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-top: 20px;
+    z-index: 5;
+    background-color: #dfdfdf;
+    width: 150px;
+    top: 0;
+    left: -150px;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 0 0 10px 0;
+  }
+  #menu-on:checked ~ .header-navigation-list {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    transition: 0.5s;
+  }
+  #menu-on:checked ~ .burger {
+    background: linear-gradient(45deg, #4f4f4f 20%, white 20% 40%, #4f4f4f 40% 60%, white 60% 80%, #4f4f4f 80% 100%);
+    transform: rotate(90deg);
+    transition: 0.5s;
+  }
+  .header-navigation-item {
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 700px) {
@@ -211,7 +261,7 @@ details {
 }
 @media (max-width: 640px) {
   .main-text {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 14px;
   }
   .grid-wrapper {
@@ -232,20 +282,28 @@ details {
 }
 
 @media (max-width: 320px) {
+  .title {
+    text-align: center;
+  }
   .main-text {
-    line-height: 12px;
+    line-height: 14px;
   }
   .return {
-    right: 30px;
+    right: 15px;
   }
   .works-list {
-    padding-left: 20px;
+    padding-left: 10px;
+    list-style: none;
+    text-align: center;
   }
   details {
     padding-left: 20px;
     padding-right: 0px;
   }
+  .codeTitle {
+    text-align: center;
+  }
   .js {
-    font-size: 6px;
+    font-size: 5px;
   }
 }
