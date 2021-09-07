@@ -83,7 +83,7 @@
             <pre><code class="js">async function getQuote() {  
     const res = await fetch('js/quotes.json');
     const quotes = await res.json();
-    let randomNumQuote = Math.floor(Math.random() * (quotes.length + 1));
+    let randomNumQuote = Math.random() * (quotes.length + 1);
     quote.textContent = quotes[randomNumQuote].text;
     author.textContent = quotes[randomNumQuote].author;
 }
