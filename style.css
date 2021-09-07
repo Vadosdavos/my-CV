@@ -285,6 +285,7 @@ iframe {
     background: #4f4f4f;
     margin-left: 10px;
     position: relative;
+    cursor: pointer;
   }
   .menu-off::before {
     content: '';
