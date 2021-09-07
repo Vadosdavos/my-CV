@@ -8,6 +8,9 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
     <script>
       hljs.initHighlightingOnLoad();
+      console.log(
+        'Score: 150(160) / 150 \n -вёрстка валидная +10  \n -вёрстка семантическая (header, main, footer, nav, section, details, summary, figure, figcaption, h1, h2, h3) +20 \n -для оформления СV используются css-стили +10 \n -контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы +10 \n -вёрстка адаптивная +10 \n -есть адаптивное меню (с 960px) плавная прокрутка на разделы CV + 10 \n -есть аватарка с alt + 10 \n -контакты для связи и перечень навыков оформлены в виде списка ul > li +10 \n -CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10 \n -CV содержит пример вашего кода с подсветкой кода (highlight.js) +10 \n -CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке +10 \n -CV выполнено на английском языке +10 \n -выполнены требования к Pull Request \n -есть видеорезюме автора CV на английском языке с транскрипцией +10 \n -качество выполнения не ниже чем в примерах CV +10'
+      );
     </script>
     <title>Vadim Bezymyannyi - CV</title>
   </head>
@@ -27,6 +30,7 @@
             <li class="header-navigation-item"><a href="#skills">skills</a></li>
             <li class="header-navigation-item"><a href="#education">education</a></li>
             <li class="header-navigation-item"><a href="#works">works</a></li>
+            <li class="header-navigation-item"><label class="menu-off" for="menu-on"></label></li>
           </ul>
         </nav>
       </div>
@@ -42,7 +46,7 @@
       <section class="cv-video">
         <div class="container">
           <h3 class="title">Self-introduction</h3>
-          <iframe width="650" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="650" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
       <section class="skills" id="skills">
@@ -74,20 +78,6 @@
       <section class="works" id="works">
         <div class="container">
           <h3 class="title">Works</h3>
-          <ul class="works-list">
-            <li class="works-item">
-              <figure class="figure-field">
-                <figcaption class="work-item-title"><a href="https://github.com/Vadosdavos/virtual-piano">Virtual piano for RSschool</a></figcaption>
-                <a href="https://github.com/Vadosdavos/virtual-piano"><img src="images/virtual-piano.jpg" width="600" alt="Virtual piano prev" /></a>
-              </figure>
-            </li>
-            <li class="works-item">
-              <figure class="figure-field">
-                <figcaption class="work-item-title"><a href="https://github.com/Vadosdavos/Online-zoo">Online zoo landing for RSschool</a></figcaption>
-                <a href="https://github.com/Vadosdavos/Online-zoo"><img src="images/online-zoo.jpg" width="600" alt="Online zoo prev" /></a>
-              </figure>
-            </li>
-          </ul>
           <details>
             <summary class="codeTitle">Code examples</summary>
             <pre><code class="js">async function getQuote() {  
@@ -99,6 +89,20 @@
 }
 changeQuoteButton.addEventListener('click', getQuote);</code></pre>
           </details>
+          <ul class="works-list">
+            <li class="works-item">
+              <figure class="figure-field">
+                <figcaption class="work-item-title"><a href="https://github.com/Vadosdavos/virtual-piano" target="__blank">Virtual piano for RSschool</a></figcaption>
+                <a href="https://github.com/Vadosdavos/virtual-piano" target="__blank"><img src="images/virtual-piano.jpg" width="600" alt="Virtual piano prev" /></a>
+              </figure>
+            </li>
+            <li class="works-item">
+              <figure class="figure-field">
+                <figcaption class="work-item-title"><a href="https://github.com/Vadosdavos/Online-zoo" target="__blank">Online zoo landing for RSschool</a></figcaption>
+                <a href="https://github.com/Vadosdavos/Online-zoo" target="__blank"><img src="images/online-zoo.jpg" width="600" alt="Online zoo prev" /></a>
+              </figure>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
