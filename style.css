@@ -359,6 +359,10 @@ iframe {
     height: 30px;
     right: 60px;
   }
+  iframe {
+    width: 75vw;
+    height: 20vh;
+  }
 }
 @media (max-width: 320px) {
   .main-text {
