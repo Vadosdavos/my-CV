@@ -100,7 +100,7 @@ main {
 }
 .skills .grid-wrapper {
   grid-template-columns: 54% 46%;
-  grid-template-rows: 30px 120px;
+  grid-template-rows: 30px 1fr;
   grid-template-areas:
     'title title2'
     'text text2';
