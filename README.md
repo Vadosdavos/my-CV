@@ -1,1 +1,1 @@
-Deploy: https://vadosdavos.github.io/rsschool-cv/
+Deploy: https://vadosdavos.github.io/my-CV/
