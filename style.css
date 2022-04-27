@@ -76,22 +76,18 @@ main {
   padding-top: 25px;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 90px 160px;
-  grid-template-areas:
-    'title img'
-    'text img';
+  grid-template-areas: 'text img';
 }
 .main-title {
-  grid-area: title;
   margin: 0;
   padding: 0;
-  align-self: center;
+  align-self: flex-start;
 }
 .main-text {
   grid-area: text;
-  margin: 0;
-  padding: 0;
-  padding-top: 25px;
+}
+.main-text-item {
+  margin-bottom: 5px;
 }
 .cv-avatar {
   grid-area: img;
@@ -156,24 +152,9 @@ main {
   height: 50px;
   background-image: url('./images/up.svg');
   border-radius: 50%;
-  opacity: 0.75;
-}
-details {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding-left: 40px;
-  padding-right: 40px;
-  max-width: 960px;
-}
-.codeTitle {
+  opacity: 0;
   cursor: pointer;
-  font-weight: bold;
-}
-.codeTitle:hover {
-  text-decoration: underline;
-}
-.js {
-  font-size: 12px;
+  transition: all 0.5s;
 }
 .cv-video .container {
   border-bottom: 1px solid #d3d1d1;
@@ -205,7 +186,6 @@ iframe {
     padding-right: 10px;
   }
   .main-text {
-    padding-top: 15px;
     font-size: 14px;
   }
   .burger {
@@ -319,20 +299,11 @@ iframe {
     list-style: none;
     text-align: center;
   }
-  .codeTitle {
-    text-align: center;
-  }
   .figure-field img {
     width: 100%;
   }
   .return {
     right: 80px;
-  }
-  details {
-    padding-right: 0px;
-  }
-  .js {
-    font-size: 8px;
   }
   iframe {
     width: 75vw;
@@ -340,13 +311,6 @@ iframe {
   }
 }
 @media (max-width: 640px) {
-  .main-text {
-    font-size: 11px;
-    line-height: 14px;
-  }
-  .grid-wrapper {
-    grid-template-rows: 50px 160px;
-  }
   .main-title,
   .title {
     font-size: 1em;
@@ -360,15 +324,21 @@ iframe {
     right: 60px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 400px) {
+  .grid-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-title {
+    text-align: center;
+    margin-top: 10px;
+  }
   .main-text {
     line-height: 14px;
+    order: 2;
   }
   .return {
     right: 15px;
-  }
-  details {
-    padding-left: 20px;
-    padding-right: 0px;
   }
 }

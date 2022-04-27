@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
     <title>Vadim Bezymyannyi - CV</title>
   </head>
   <body>
@@ -35,15 +30,23 @@
     <main>
       <section class="main-info" id="about">
         <div class="container grid-wrapper">
-          <h2 class="main-title">Vadim Bezymyannyi</h2>
-          <p class="main-text">I'am 28 years old. I have C&I Engineer degree, but I want to change my speciality. So I started to learn web-technologies, in particular HTML, CSS and JavaScript. Studying is easy for me, I like to solve problems and get results. I appreciate honesty and kindness in people. I want to work remotely and travel.</p>
+          <div class="main-text">
+            <h2 class="main-title">Vadim Bezymyannyi</h2>
+          <ul>
+            <li class="main-text-item">I'am 28 years old. Have C&I Engineer degree.</li>
+            <li class="main-text-item">Good at JavaScript, HTML, CSS, ReactJs, Git. Worked with TypeScript, Webpack, NodeJs at RSSchool.</li>
+            <li class="main-text-item">Calm person, have good communication skills, can easy work in team. Appreciate honesty and kindness in people.</li>
+            <li class="main-text-item">Interested in science-tech, astronomy, game-dev and extreme spots.</li>
+            <li class="main-text-item">Want to work remotely and travel.</li>
+          </ul>
+          </div>
           <img class="cv-avatar" src="images/user.jpg" width="300" alt="Avatar" />
         </div>
       </section>
       <section class="cv-video">
         <div class="container">
           <h3 class="title">Self-introduction</h3>
-          <iframe width="650" height="315" src="https://www.youtube.com/embed/UWQAcFn9Ozg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="650" height="315" src="https://www.youtube.com/embed/ktrnsH8gvRo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
       <section class="skills" id="skills">
@@ -60,7 +63,7 @@
           <h3 class="title">Language skills</h3>
           <ul class="skills-list">
             <li class="skills-item">Russian: Native</li>
-            <li class="skills-item">English: Intermediate</li>
+            <li class="skills-item">English: Intermediate (B1)</li>
           </ul>
         </div>
       </section>
@@ -78,39 +81,17 @@
       <section class="works" id="works">
         <div class="container">
           <h3 class="title">Works</h3>
-          <details>
-            <summary class="codeTitle">Code examples</summary>
-            <pre><code class="js">async function getQuote() {  
-    const res = await fetch('js/quotes.json');
-    const quotes = await res.json();
-    let randomNumQuote = Math.random() * (quotes.length + 1);
-    quote.textContent = quotes[randomNumQuote].text;
-    author.textContent = quotes[randomNumQuote].author;
-}
-changeQuoteButton.addEventListener('click', getQuote);</code></pre>
-          </details>
           <ul class="works-list">
             <li class="works-item">
               <figure class="figure-field">
                 <figcaption class="work-item-title">
-                  <a href="https://github.com/Vadosdavos/virtual-piano" target="_blank">Virtual piano</a>
-                  <p>
-                    The application is a virtual piano. The page displays the piano keys. The minimum number of keys is 12 - 7 white and 5 black (one octave), near the piano keys are displayed either the names of the notes corresponding to these keys, or the letters of the keyboard keys, when clicked on which they sound. What is displayed at the moment depends on the state of the Notes / Letters
-                    switch. <br />Used technologies: HTML, CSS, JavaScript
-                  </p>
-                </figcaption>
-                <a href="https://github.com/Vadosdavos/virtual-piano" target="_blank"><img src="images/virtual-piano.jpg" width="600" alt="Virtual piano prev" /></a>
-              </figure>
-            </li>
-            <li class="works-item">
-              <figure class="figure-field">
-                <figcaption class="work-item-title">
-                  <a href="https://vadosdavos.github.io/photo-filter/" target="_blank">Photo filter</a>
-                  <p>
-                    The application is a photo editor that allows you to edit an image by applying various properties and filters to them. <br />Used technologies: HTML, CSS, JavaScript
-                  </p>
-                </figcaption>
-                <a href="https://vadosdavos.github.io/photo-filter/" target="_blank"><img src="images/filter.jpg" width="600" alt="Virtual piano prev" /></a>
+                  <figure class="figure-field">
+                    <figcaption class="work-item-title">
+                      <p>Environment Discovery Project (EDP)</p>
+                      <p>I was part of EDP as frontend developer. EDP is a project, focused on developing an app that can provide an easy comparison between settings of two servers in order to solve server configuration-related problems. <br />Used technologies: ReactJS, Redux, Redux-saga, Ant Design, SCSS, Jest, Enzyme, ESLint</p> 
+                    </figcaption>
+                    <a href="images/EDP.jpg" target="_blank"><img src="images/EDP.jpg" width="600" alt="EDP prev" /></a>
+                  </figure>
               </figure>
             </li>
             <li class="works-item">
@@ -137,20 +118,56 @@ changeQuoteButton.addEventListener('click', getQuote);</code></pre>
                   </figure>
               </figure>
             </li>
+            <li class="works-item">
+              <figure class="figure-field">
+                <figcaption class="work-item-title">
+                  <a href="https://vadosdavos.github.io/photo-filter/" target="_blank">Photo filter</a>
+                  <p>
+                    The application is a photo editor that allows you to edit an image by applying various properties and filters to them. <br />Used technologies: HTML, CSS, JavaScript
+                  </p>
+                </figcaption>
+                <a href="https://vadosdavos.github.io/photo-filter/" target="_blank"><img src="images/filter.jpg" width="600" alt="Photo filter prev" /></a>
+              </figure>
+            </li>
+            <li class="works-item">
+              <figure class="figure-field">
+                <figcaption class="work-item-title">
+                  <a href="https://github.com/Vadosdavos/virtual-piano" target="_blank">Virtual piano</a>
+                  <p>
+                    The application is a virtual piano. The page displays the piano keys. The minimum number of keys is 12 - 7 white and 5 black (one octave), near the piano keys are displayed either the names of the notes corresponding to these keys, or the letters of the keyboard keys, when clicked on which they sound. What is displayed at the moment depends on the state of the Notes / Letters
+                    switch. <br />Used technologies: HTML, CSS, JavaScript
+                  </p>
+                </figcaption>
+                <a href="https://github.com/Vadosdavos/virtual-piano" target="_blank"><img src="images/virtual-piano.jpg" width="600" alt="Virtual piano prev" /></a>
+              </figure>
+            </li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="container">
-        <a href="#head" class="return"></a>
+        <span class="return" id="return"></span>
         <ul class="copyright">
           <li class="copyright-item"><a href="https://github.com/Vadosdavos">@Vadosdavos</a>, 2022</li>
-          <li class="copyright-item">
-            <a href="https://rs.school/js/"><img src="images/rs_school_js.svg" width="85" alt="RSschool logo" /></a>
-          </li>
         </ul>
       </div>
     </footer>
+    <script>
+      const returnBtn = document.getElementById('return');
+
+      function scroll() {
+        if (window.pageYOffset > 60) {
+          returnBtn.style.opacity = '0.75'
+        } else { 
+          returnBtn.style.opacity = '0'
+        }
+      }
+
+      returnBtn.onclick = function() {
+	      window.scrollTo(0,0)
+      }      
+      window.onscroll = scroll;
+    </script>
   </body>
 </html>
