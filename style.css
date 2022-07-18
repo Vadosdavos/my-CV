@@ -7,7 +7,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -143,6 +143,12 @@ main {
 .works-list {
   margin: 0;
   padding-bottom: 0;
+  overflow: hidden;
+}
+.works-item {
+  transform: translateX(20%) scale(0.9);
+  opacity: 0;
+  transition: all 1s;
 }
 .skills-item,
 .education-item,
@@ -198,6 +204,10 @@ iframe {
 }
 .menu-off {
   display: none;
+}
+.active-item {
+  opacity: 1;
+  transform: translateX(0) scale(1);
 }
 
 @media (max-width: 960px) {

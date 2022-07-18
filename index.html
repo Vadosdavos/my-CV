@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <title>Vadim Bezymyannyi - CV</title>
   </head>
   <body>
@@ -192,6 +195,8 @@
     </footer>
     <script>
       const returnBtn = document.getElementById('return');
+      const worksContainer = document.querySelector('.works-list')
+      const works = worksContainer.getElementsByTagName('li');
 
       function scroll() {
         if (window.pageYOffset > 60) {
@@ -206,7 +211,27 @@
       returnBtn.onclick = function() {
 	      window.scrollTo(0,0)
       }      
-      window.onscroll = scroll;
+
+      function appearItems() {
+        for (item of works) {
+          const slideInAt = window.scrollY + window.innerHeight - item.clientHeight / 4;
+          const itemTop = item.getBoundingClientRect().top + window.scrollY;
+          const itemBottom = itemTop + item.clientHeight;
+          const isHalfShown = slideInAt > itemTop;
+          const isNotScrolledPast = window.scrollY < itemBottom;
+          if (isHalfShown && isNotScrolledPast) {
+            item.classList.add('active-item');
+          } else {
+            item.classList.remove('active-item');
+          }
+        }
+      }
+
+      window.addEventListener('load', appearItems());
+      window.addEventListener('scroll', ()=> {
+        appearItems();
+        scroll();
+      });
     </script>
   </body>
 </html>
