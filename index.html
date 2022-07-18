@@ -92,7 +92,7 @@
                       <a href="https://vadosdavos.github.io/Skateboard-3d-configurator/" target="_blank">Skateboard 3d configurator</a>
                       <p>In this small app I've made my first steps in learning Three.JS library. You can configure skateboard and view it in 3D. <br />Used technologies: ReactJS, TypeScript, Redux, Three.JS</p> 
                     </figcaption>
-                    <a href="https://vadosdavos.github.io/Skateboard-3d-configurator/" target="_blank"><img src="images/skate.jpg" width="600" alt="App prev" /></a>
+                    <a href="https://vadosdavos.github.io/Skateboard-3d-configurator/" class="img-link" target="_blank"><img src="images/skate.jpg" width="600" alt="App prev" /></a>
                   </figure>
               </figure>
             </li>
@@ -104,7 +104,7 @@
                       <p>Environment Discovery Project (EDP)</p>
                       <p>I was part of EDP as frontend developer. EDP is a project, focused on developing an app that can provide an easy comparison between settings of two servers in order to solve server configuration-related problems. <br />Used technologies: ReactJS, Redux, Redux-saga, Ant Design, SCSS, Jest, Enzyme, ESLint</p> 
                     </figcaption>
-                    <a href="images/EDP.jpg" target="_blank"><img src="images/EDP.jpg" width="600" alt="EDP prev" /></a>
+                    <a href="images/EDP.jpg" class="img-link" target="_blank"><img src="images/EDP.jpg" width="600" alt="EDP prev" /></a>
                   </figure>
               </figure>
             </li>
@@ -116,7 +116,7 @@
                       <a href="https://vadadosdavos-async-race.netlify.app/" target="_blank">Async race</a>
                       <p>This SPA can manage the collection of the cars, operate its engines, and show races statistics. <br />Used technologies: ReactJS, TypeScript, CSS</p> 
                     </figcaption>
-                    <a href="https://vadadosdavos-async-race.netlify.app/" target="_blank"><img src="images/async-race.jpg" width="600" alt="Game prev" /></a>
+                    <a href="https://vadadosdavos-async-race.netlify.app/" class="img-link" target="_blank"><img src="images/async-race.jpg" width="600" alt="Game prev" /></a>
                   </figure>
               </figure>
             </li>
@@ -128,7 +128,7 @@
                       <a href="https://vadosdavos.github.io/my-works/christmas-task/" target="_blank">Christmas tree decorating game</a>
                       <p>This is a litle game there you need to choose some toys and put them on the Christmas tree. <br />Used technologies: HTML, SASS, TypeScript</p> 
                     </figcaption>
-                    <a href="https://vadosdavos.github.io/my-works/christmas-task/" target="_blank"><img src="images/tree.jpg" width="600" alt="Game prev" /></a>
+                    <a href="https://vadosdavos.github.io/my-works/christmas-task/" class="img-link" target="_blank"><img src="images/tree.jpg" width="600" alt="Game prev" /></a>
                   </figure>
               </figure>
             </li>
@@ -140,7 +140,7 @@
                       <a href="https://vadosdavos.github.io/my-works/art-quiz/" target="_blank">Art Quiz</a>
                       <p>Application-quiz on the knowledge of the masterpieces of painting and their authors. <br />Used technologies: HTML, SASS, TypeScript</p> 
                     </figcaption>
-                    <a href="https://vadosdavos.github.io/my-works/art-quiz/" target="_blank"><img src="images/art-quiz.jpg" width="600" alt="Game prev" /></a>
+                    <a href="https://vadosdavos.github.io/my-works/art-quiz/" class="img-link" target="_blank"><img src="images/art-quiz.jpg" width="600" alt="Game prev" /></a>
                   </figure>
               </figure>
             </li>
@@ -152,7 +152,7 @@
                     This is a landing page of Louvre museum. <br />Used technologies: HTML, CSS, JavaScript
                   </p>
                 </figcaption>
-                <a href="https://vadosdavos.github.io/my-works/museum-dom/" target="_blank"><img src="images/museum.jpg" width="600" alt="Museum prev" /></a>
+                <a href="https://vadosdavos.github.io/my-works/museum-dom/" class="img-link" target="_blank"><img src="images/museum.jpg" width="600" alt="Museum prev" /></a>
               </figure>
             </li>
             <li class="works-item">
@@ -163,7 +163,7 @@
                     The application is a photo editor that allows you to edit an image by applying various properties and filters to them. <br />Used technologies: HTML, CSS, JavaScript
                   </p>
                 </figcaption>
-                <a href="https://vadosdavos.github.io/photo-filter/" target="_blank"><img src="images/filter.jpg" width="600" alt="Photo filter prev" /></a>
+                <a href="https://vadosdavos.github.io/photo-filter/" class="img-link" target="_blank"><img src="images/filter.jpg" width="600" alt="Photo filter prev" /></a>
               </figure>
             </li>
             <li class="works-item">
@@ -175,7 +175,7 @@
                     switch. <br />Used technologies: HTML, CSS, JavaScript
                   </p>
                 </figcaption>
-                <a href="https://vadosdavos.github.io/virtual-piano/" target="_blank"><img src="images/virtual-piano.jpg" width="600" alt="Virtual piano prev" /></a>
+                <a href="https://vadosdavos.github.io/virtual-piano/" class="img-link" target="_blank"><img src="images/virtual-piano.jpg" width="600" alt="Virtual piano prev" /></a>
               </figure>
             </li>
           </ul>
@@ -195,9 +195,11 @@
 
       function scroll() {
         if (window.pageYOffset > 60) {
-          returnBtn.style.opacity = '0.75'
+          returnBtn.style.opacity = '0.75';
+          returnBtn.style.pointerEvents = 'auto';
         } else { 
-          returnBtn.style.opacity = '0'
+          returnBtn.style.opacity = '0';
+          returnBtn.style.pointerEvents = 'none';
         }
       }
 
